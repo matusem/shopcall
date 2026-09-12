@@ -1,0 +1,11 @@
+{
+  "name": "valorant-shop-call",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Guess which skin is sitting in your friend's daily VALORANT shop.",
+  "scripts": {
+    "data": "node tools/build-data.mjs",
+    "dev": "npx -y serve public -l 4321",
+    "deploy": "node tools/deploy.mjs"
+  }
+}
