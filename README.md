@@ -3,7 +3,7 @@
 A party game for a VALORANT squad: everyone calls **one skin per friend** — the skin they bet is
 sitting in that friend's daily shop right now. Then you open your real shops and see who read you right.
 
-Live: https://valorant-shop-call.surge.sh
+Live: https://matusem.github.io/shopcall/
 
 ## How a round works
 
@@ -42,12 +42,19 @@ That leaves **732 skins** — 605 across the 19 guns plus 127 melee — each wit
 and art. Knives are in their own category — worth knowing that melee skins only ever appear in
 bundles and the Night Market, never in the four daily-shop slots.
 
+## Hosting
+
+Served from GitHub Pages off the `gh-pages` branch, which holds the contents of `public/`.
+It was on surge first, but `*.surge.sh` is blocked or stale-cached by enough ISPs, mobile carriers
+and antivirus DNS filters that friends kept landing on surge's "project not found" page. `github.io`
+does not have that problem.
+
 ## Commands
 
 ```bash
 npm run data     # refresh public/skins.json after a new VALORANT patch
 npm run dev      # serve locally on http://localhost:4321
-npm run deploy   # publish to surge
+npm run deploy   # push public/ to the gh-pages branch (GitHub Pages)
 ```
 
 Not affiliated with Riot Games.

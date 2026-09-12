@@ -6,6 +6,6 @@
   "scripts": {
     "data": "node tools/build-data.mjs",
     "dev": "npx -y serve public -l 4321",
-    "deploy": "node tools/deploy.mjs"
+    "deploy": "git subtree push --prefix public origin gh-pages"
   }
 }
